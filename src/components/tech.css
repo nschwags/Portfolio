@@ -1,0 +1,76 @@
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Tech Container */
+.tech-container {
+  width: 100%;
+  height: auto;
+}
+
+/* Tech List */
+.tech-container ul {
+  display: grid;
+  width: 80%;
+  justify-self: center;
+  grid-template-columns: repeat(4, 1fr); /* Responsive grid */
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tech List Item */
+.tech-container ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #293132;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 40px;
+}
+
+/* Icon Styling */
+.tech-container ul li i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #293132;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.tech-container ul li:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tech-container ul li:hover i {
+  transform: rotate(15deg); /* Add rotation to icons for fun hover effect */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .tech-container ul {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(120px, 1fr)
+    ); /* Smaller grid items on mobile */
+  }
+
+  .tech-container ul li {
+    font-size: 16px; /* Smaller text on mobile */
+  }
+
+  .tech-container ul li i {
+    font-size: 26px; /* Smaller icon on mobile */
+  }
+}
