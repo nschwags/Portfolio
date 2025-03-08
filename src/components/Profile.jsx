@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import pfp from "../assets/Nathanpfp.jpg";
 import "./profile.css";
-import "../app.css";
+import "../App.css";
 
 function Profile() {
   const changeColor = (color) => {
