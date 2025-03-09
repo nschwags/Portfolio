@@ -1,6 +1,9 @@
 .contact-container {
   height: auto;
   background: linear-gradient(185deg, #474044 80%, #293132 10%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-form {
